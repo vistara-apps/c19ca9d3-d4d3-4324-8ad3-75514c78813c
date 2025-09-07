@@ -1,20 +1,32 @@
-# NutriGenius - Base Mini App
+# NutriGenius - Your Personalized Daily Food Guide
 
-Your personalized daily food guide for health & goals. Get instant, AI-powered meal recommendations tailored to your dietary restrictions and health objectives.
+NutriGenius is a production-ready Next.js Base Mini App that provides AI-powered personalized meal recommendations and nutrition tracking. Built with modern web technologies and designed for the Base ecosystem.
 
-## Features
+## 🚀 Features
 
-- **🎯 Personalized Meal Suggestions**: AI-powered recommendations based on your health goals and preferences
-- **🚫 Dietary Restriction Filtering**: Automatic filtering for allergies, dietary preferences, and restrictions
-- **📊 Nutrient Goal Alignment**: Track your daily nutrition against personalized targets
-- **📱 Base Mini App**: Seamlessly integrated with Base wallet and Farcaster
-- **🎨 Beautiful UI**: Modern, responsive design with dark theme and smooth animations
+### Core Features
+- **Daily Personalized Meal Suggestions**: AI-generated meal recommendations based on health goals and dietary restrictions
+- **Dietary Restriction Filtering**: Automatic filtering for allergies, intolerances, and dietary preferences
+- **Nutrient Goal Alignment**: Meal suggestions aligned with macro and micronutrient targets
+- **Nutrition Tracking**: Comprehensive food logging and nutrition analysis
+- **Progress Insights**: AI-powered insights and trends analysis
 
-## Tech Stack
+### Premium Features (Pro Subscription)
+- **Unlimited AI Meal Suggestions**: No daily limits on meal generation
+- **Advanced Nutrition Analysis**: Detailed macro tracking and insights
+- **Recipe Customization**: Personalized recipe adaptation
+- **Meal Prep Optimization**: Smart meal planning for efficiency
+- **Shopping List Generation**: Automated grocery lists
+- **Priority Support**: Enhanced customer support
 
-- **Frontend**: Next.js 15 with App Router, TypeScript, Tailwind CSS
-- **Blockchain**: Base (via OnchainKit and MiniKit)
-- **AI**: OpenAI GPT for meal generation and nutrition insights
+## 🛠 Tech Stack
+
+- **Frontend**: Next.js 15, React 18, TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **Authentication**: Privy (wallet-based auth for Base ecosystem)
+- **Database**: Supabase (PostgreSQL with real-time features)
+- **AI**: OpenAI GPT-4 / OpenRouter for meal generation
+- **Payments**: Stripe for subscription management
 - **Charts**: Recharts for nutrition visualization
 - **Icons**: Lucide React
 
