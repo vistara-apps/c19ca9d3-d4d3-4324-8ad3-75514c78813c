@@ -2,11 +2,13 @@ import OpenAI from 'openai';
 import { MealSuggestion, UserPreferences } from './types';
 import { generateMealPlanPrompt } from './utils';
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || process.env.OPENROUTER_API_KEY,
-  baseURL: "https://openrouter.ai/api/v1",
-  dangerouslyAllowBrowser: true,
-});
+function getOpenAIClient() {
+  return new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY || process.env.OPENROUTER_API_KEY || 'demo-key',
+    baseURL: "https://openrouter.ai/api/v1",
+    dangerouslyAllowBrowser: true,
+  });
+}
 
 export async function generateMealSuggestions(
   preferences: UserPreferences,
@@ -18,6 +20,7 @@ export async function generateMealSuggestions(
     for (const mealType of mealTypes) {
       const prompt = generateMealPlanPrompt(preferences, mealType);
       
+      const openai = getOpenAIClient();
       const completion = await openai.chat.completions.create({
         model: 'google/gemini-2.0-flash-001',
         messages: [
@@ -133,6 +136,7 @@ Target intake: ${JSON.stringify(targetNutrition)}
 
 Provide a concise, encouraging insight about their progress and one specific recommendation for improvement.`;
 
+    const openai = getOpenAIClient();
     const completion = await openai.chat.completions.create({
       model: 'google/gemini-2.0-flash-001',
       messages: [

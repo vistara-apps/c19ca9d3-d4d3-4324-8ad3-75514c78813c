@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   description: 'Get instant, personalized daily food recommendations and meal ideas for your health goals, considering dietary restrictions.',
   keywords: 'nutrition, meal planning, health goals, dietary restrictions, AI recommendations',
   authors: [{ name: 'NutriGenius Team' }],
-  viewport: 'width=device-width, initial-scale=1',
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
   themeColor: '#1e40af',
 };
 
