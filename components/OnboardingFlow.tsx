@@ -149,7 +149,6 @@ export function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
               Time available for meal prep (minutes)
             </label>
             <Input
-              type="number"
               value={preferences.timeAvailable.toString()}
               onChange={(e) => setPreferences(prev => ({ 
                 ...prev, 

@@ -8,7 +8,8 @@
   }
   
   body {
-    @apply bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-text-primary min-h-screen;
+    @apply bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 min-h-screen;
+    color: hsl(0, 0%, 95%);
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
@@ -19,11 +20,16 @@
 
 @layer components {
   .glass-card {
-    @apply bg-surface/80 backdrop-blur-xl border border-white/10 rounded-lg shadow-card;
+    @apply backdrop-blur-xl border border-white/10 rounded-lg shadow-card;
+    background-color: hsl(215, 20%, 15%, 0.8);
   }
 
   .glass-card-interactive {
-    @apply glass-card hover:bg-surface/90 transition-all duration-200 cursor-pointer hover:shadow-modal;
+    @apply glass-card transition-all duration-200 cursor-pointer hover:shadow-modal;
+  }
+  
+  .glass-card-interactive:hover {
+    background-color: hsl(215, 20%, 15%, 0.9);
   }
 
   .btn-primary {
@@ -31,11 +37,27 @@
   }
 
   .btn-secondary {
-    @apply bg-surface/60 text-text-primary px-6 py-3 rounded-lg font-medium hover:bg-surface/80 transition-all duration-200 border border-white/10;
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 border border-white/10;
+    background-color: hsl(215, 20%, 15%, 0.6);
+    color: hsl(0, 0%, 95%);
+  }
+  
+  .btn-secondary:hover {
+    background-color: hsl(215, 20%, 15%, 0.8);
   }
 
   .input-field {
-    @apply bg-surface/60 border border-white/10 rounded-lg px-4 py-3 text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none transition-all duration-200;
+    @apply border border-white/10 rounded-lg px-4 py-3 focus:outline-none transition-all duration-200;
+    background-color: hsl(215, 20%, 15%, 0.6);
+    color: hsl(0, 0%, 95%);
+  }
+  
+  .input-field::placeholder {
+    color: hsl(0, 0%, 70%);
+  }
+  
+  .input-field:focus {
+    border-color: hsl(170, 70%, 45%);
   }
 
   .tag-dietary {
@@ -51,7 +73,11 @@
   }
 
   .metric-card {
-    @apply glass-card p-6 hover:bg-surface/90 transition-all duration-200;
+    @apply glass-card p-6 transition-all duration-200;
+  }
+  
+  .metric-card:hover {
+    background-color: hsl(215, 20%, 15%, 0.9);
   }
 
   .floating-elements {

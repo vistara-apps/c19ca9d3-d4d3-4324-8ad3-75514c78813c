@@ -40,9 +40,9 @@ export default function HomePage() {
   ];
 
   const macroData = [
-    { name: 'Protein', current: 85 },
-    { name: 'Carbs', current: 150 },
-    { name: 'Fat', current: 45 }
+    { name: 'Protein', current: 85, target: 120, unit: 'g' },
+    { name: 'Carbs', current: 150, target: 200, unit: 'g' },
+    { name: 'Fat', current: 45, target: 65, unit: 'g' }
   ];
 
   useEffect(() => {
