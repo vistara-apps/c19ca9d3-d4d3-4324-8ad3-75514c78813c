@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "NutriGenius",
+    "subtitle": "Built with Zara",
+    "description": "NutriGenius is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://c19ca9d3d4d343248ad375514c78813c-5og9.vercel.app",
+    "splashImageUrl": "https://c19ca9d3d4d343248ad375514c78813c-5og9.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://c19ca9d3d4d343248ad375514c78813c-5og9.vercel.app/image.png",
+    "tagline": "NutriGenius",
+    "screenshotUrls": [
+      "https://c19ca9d3d4d343248ad375514c78813c-5og9.vercel.app/screenshot.png",
+      "https://c19ca9d3d4d343248ad375514c78813c-5og9.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://c19ca9d3d4d343248ad375514c78813c-5og9.vercel.app/api/webhook"
+  }
+}
